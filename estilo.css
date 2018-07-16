@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: 'Chewy';
+}
+
+#promo{
+    display: none;
+}
+
+#xa{
+    display: none;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#aba{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(250, 243, 155);
+}
+
+#logo{
+    align-self: flex-start;
+}
+
+#navegador{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8vh; 
+    margin-left: 2vh;
+    width: 160vh;
+}
+
+header div nav a{
+    font-size: 14pt;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(239, 111, 43);
+}
+
+#capa img{
+    width: 100%;
+    max-height: 600px;
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+    background-image: url(images/textura1.jpg);
+    height: 130vh;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -5px;
+}
+
+section img{
+    border: 2px solid black;
+}
+
+section div-second-child{
+    height: 120vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#produto{
+    width: 25vh;
+    height: 20vh;
+}
+.loja img{
+    width: 23vh;
+    height: 15vh;
+}
+
+#produto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section p{
+    font-weight: bold;
+    color: black;
+    font-size: 14pt;
+}
+
+#div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 450px){
+    header div nav a{
+        font-size: 12pt;
+    }
+    footer div a{
+        font-size: 12pt;
+    }
+}
+
+@media(max-width: 420px){
+    header div nav a{
+        font-size: 9pt;
+    }
+}
+
+
+footer{
+    border-top: 2px solid black;
+    background-image: url(Images/textura2.jpg);
+    background-size: 100%;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+#info a{
+    font-weight: bold;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12pt;
+    color: black;
+}
+
+@media(min-width: 1000px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -5px;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+        height: 200vh;
+        background-size: 100%;
+    }
+    #promo{
+        display: block;
+        width: 80%;
+    }
+    #produtos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    section div p{
+        display: none;
+    }
+    #xa{
+        display: block;
+    }
+    #loj{
+        display: block;
+    }
+    #produto{
+        height: 40vh;
+        width: 50vh;
+    }
+    .loja img{
+        width: 30vh;
+        height: 30vh;
+    }
+    #info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+#pug{
+    
+    width: 10px;
+    height: 10px;
+    animation-duration: 3s;
+    animation-name: pugpassear;
+    transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+    }
+
+@keyframes pugpassear{
+    from{
+        margin-left: 100%;
+        width: 10%
+    }
+    to{
+        margin-right: 10%;
+        width: 100%;
+
+    }
+}
+    
