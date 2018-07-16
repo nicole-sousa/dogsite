@@ -3,7 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    font-family: 'Chewy';
+    font-family: 'Roboto';
 }
 
 #promo{
@@ -195,6 +195,12 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    header div nav a{
+        font-size: 20pt;
+    }
+    body p{
+        font-size: 20pt;
     }
 }
 
